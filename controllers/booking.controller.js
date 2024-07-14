@@ -2,10 +2,10 @@ import HotelBooking from "../models/hotel.model.js";
 import FlightBooking from "../models/flight.model.js";
 
 export const bookHotel = async (req, res, next) => {
-  const { username, email, hotelName, price, dateOfBooking } = req.body;
+  const { userName, Email, hotelName, price, dateOfBooking } = req.body;
   const newHotel = new HotelBooking({
-    username,
-    email,
+    userName,
+    Email,
     hotelName,
     price,
     dateOfBooking,
@@ -19,10 +19,10 @@ export const bookHotel = async (req, res, next) => {
 };
 
 export const bookFlight = async (req, res, next) => {
-  const { username, email, flightName, price, dateOfBooking } = req.body;
+  const { userName, Email, flightName, price, dateOfBooking } = req.body;
   const newFlight = new FlightBooking({
-    username,
-    email,
+    userName,
+    Email,
     flightName,
     price,
     dateOfBooking,

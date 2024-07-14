@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 
 const hotelSchema = new mongoose.Schema(
   {
-    username: {
+    userName: {
       type: String,
     },
-    email: {
+    Email: {
       type: String,
     },
     hotelName: {
