@@ -6,9 +6,8 @@ import authRouter from "./routes/auth.route.js";
 import listingRouter from "./routes/listing.route.js";
 import bookingRouter from "./routes/booking.route.js";
 import cookieParser from "cookie-parser";
-const cors = require("cors");
+import cors from "cors";
 
-app.use(cors());
 dotenv.config();
 
 mongoose
@@ -21,6 +20,7 @@ mongoose
   });
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 app.use(cookieParser());
