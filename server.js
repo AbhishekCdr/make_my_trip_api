@@ -6,7 +6,9 @@ import authRouter from "./routes/auth.route.js";
 import listingRouter from "./routes/listing.route.js";
 import bookingRouter from "./routes/booking.route.js";
 import cookieParser from "cookie-parser";
+const cors = require("cors");
 
+app.use(cors());
 dotenv.config();
 
 mongoose
