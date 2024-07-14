@@ -9,9 +9,9 @@ import {
 
 const router = express.Router();
 
-router.post("/hotel", VerifyToken, bookHotel);
-router.post("/flight", VerifyToken, bookFlight);
-router.get("/hotel/get", VerifyToken, getHotel);
-router.get("/flight/get", VerifyToken, getFlight);
+router.post("/hotel", bookHotel);
+router.post("/flight", bookFlight);
+router.get("/hotel/get", getHotel);
+router.get("/flight/get", getFlight);
 
 export default router;
